@@ -4,28 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DDF1FB"
+    android:foregroundTint="#FFFFFF"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="지역을 입력해주세요."
-        android:textSize="25dp"/>
+        android:layout_below="@id/blank"
+        android:layout_marginTop="114dp"
+        android:text="  지역을 입력해주세요."
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
     <EditText
         android:id="@+id/city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/label"
-        android:inputType="textShortMessage"/>
+        android:layout_marginTop="25dp"
+        android:inputType="textShortMessage"
+        android:textSize="23dp" />
+
     <Button
         android:id="@+id/ok"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/city"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:text="확인"
-        android:textSize="20dp"/>
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
 </RelativeLayout>
